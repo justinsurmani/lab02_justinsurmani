@@ -20,7 +20,7 @@ string starT(int width, int height)
 		return result;
 	}
   for (int  i = 0; i<height; i++)
-  {for (int j = 0 ; j<width; j++)
+  {for (int j = 1 ; j<=width; j++)
 	  {
 		if (i == 0 || j == ( width/2)+1)
 		{
