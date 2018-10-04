@@ -14,10 +14,27 @@ void runTests(void);
 
 string starT(int width, int height)
 {
-  string result="";
-  result = "stub"; // TODO: remove this line, replace with correct code
-  return result;
-}
+	string result = "";
+	if( height< 2 || width<3 || width%2==0)
+	{
+		return result;
+	}
+  for (int  i = 0; i<height; i++)
+  {for (int j = 0 ; j<width; j++)
+	  {
+		if (i == 0 || j == ( width/2)+1)
+		{
+			result+= "*";
+		}
+		else
+		{
+			result+= " ";}
+	  }
+	  result += "\n";
+  }
+  return result;}
+ 
+  
 
 // Test-Driven Development; check expected results against actual
 
